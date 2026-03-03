@@ -121,9 +121,10 @@ class PolicyListTile extends StatelessWidget {
         icon = FontAwesomeIcons.screwdriverWrench;
         color = AppTheme.textSecondary;
         break;
-      default:
-        icon = FontAwesomeIcons.fileCircleCheck;
-        color = AppTheme.primary;
+      case ItemType.subscription:
+        icon = FontAwesomeIcons.rotate;
+        color = AppTheme.secondary;
+        break;
     }
 
     return Container(
